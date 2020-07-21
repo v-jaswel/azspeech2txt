@@ -43,9 +43,10 @@ the file and use this information.
     """ + os.getcwd() + "/" + KEY_FILE)
     exec(open(KEY_FILE).read())
 else:
-    print("""An Azure resource is required to access this service (and to run this
-demo). See the README for details of a free subscription. Then you can
-provide the key and the region information here.
+    print("""An Azure resource is required to access this service (and to run this demo).
+Visit the Microsoft Cognitive Services Web site at https://azure.microsoft.com/free/cognitive-services/,
+create a new Azure account, and try Cognitive Services for free.
+Then you can provide the key and the region information here.
 """)
     sys.stdout.write("Please enter your Speech Services subscription key []: ")
     subscription_key = input()
